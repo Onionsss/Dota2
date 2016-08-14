@@ -20,6 +20,12 @@ public interface DotaService {
     Observable<RxCacheResult<NewsList>> loadMoreNews(@Path("nid") String nid);
     @GET("/api/v1.0/updates/refresh")
     Observable<RxCacheResult<NewsList>> refreshUpdates();
+    @GET("/api/v1.0/newsdetail/{date}/{nid}")
+    Observable<RxCacheResult<String>> getNewsDetail(@Path("date") String date, @Path("nid") String nid);
+    @GET("/api/v1.0/video/youkuvid/{date}/{vid}")
+    Observable<String> getYoukuVid(@Path("date") String date, @Path("vid") String vid);
+
+
     @GET("/api/v1.0/updates/loadmore/{nid}")
     Observable<NewsList> loadMoreUpdates(@Path("nid") String nid);
     @GET("/api/v1.0/strategy/refresh/{strategy_type}")

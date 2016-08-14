@@ -11,17 +11,23 @@
     <include layout="@layout/toolbar"></include>
 
     <include layout="@layout/drawerlayout"></include>
-
-    <!--<android.support.design.widget.FloatingActionButton-->
-    <!--android:id="@+id/floatr"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_margin="10dp"-->
-    <!--android:clickable="true"-->
-    <!--android:onClick="checkin"-->
-    <!--android:src="@mipmap/ic_action_new"-->
-    <!--app:layout_anchor="@id/main_fl"-->
-    <!--app:layout_anchorGravity="bottom|right|end" />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl"></FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+    android:id="@+id/floatr"
+    android:layout_width="wrap_content"
+    android:visibility="gone"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="@dimen/load_more_footer_height_google"
+    android:clickable="true"
+    app:layout_behavior="onionsss.it.mvpdota.ScrollAwareFABBehavior"
+    app:backgroundTint="@color/black"
+    app:layout_anchor="@id/fl"
+    android:src="@drawable/arraw_up_select"
+    app:layout_anchorGravity="bottom|right|end" />
 
     <!--下面的导航栏-->
     <etong.bottomnavigation.lib.BottomNavigationBar

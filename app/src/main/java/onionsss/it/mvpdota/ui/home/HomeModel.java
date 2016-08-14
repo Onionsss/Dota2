@@ -33,7 +33,7 @@ public class HomeModel extends MvpBaseModel {
     }
 
     public Observable<NewsList> refresh(){
-        return RetrofitUtil.getinstance(getContext()).buildNews().refreshNews()
+        return RetrofitUtil.getinstance(getContext()).buildNews().refreshUpdates()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .map(nodel -> nodel.getResultModel()).first();
