@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">掌刀</string>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+
+    <string name="news">资讯</string>
+    <string name="update">更新</string>
+    <string name="strategy">攻略</string>
+    <string name="video">视频</string>
+    <string name="profile">我的</string>
+
+    <string name="splash_copyright">Copyright &#169; 2016 掌刀 All Rights Reserved\nPowered by Fang.Xu</string>
+    <string name="splash_version">V %1$s</string>
+
+    <string name="standard">标  清</string>
+    <string name="high">高  清</string>
+    <string name="super_high">超  清</string>
+    <string name="p1080">1080p</string>
+
+    <string name="load_fail">加载失败</string>
+    <string name="no_more_content">没有更多</string>
+    <string name="news_detail">详情</string>
+    <string name="video_detail">视频详情</string>
+    <string name="no_related_video">暂无相关视频...</string>
+    <string name="anthology">选集</string>
+    <string name="related_video">相关视频</string>
+    <string name="edit">编辑</string>
+    <string name="cancel">取消</string>
+    <string name="select_all">全选</string>
+    <string name="delete">删除</string>
+    <string name="downloading">正在下载</string>
+    <string name="waiting">等待中</string>
+    <string name="pausing">暂停中</string>
+    <string name="watched_no_video_hint">亲，您还没有观看过视频哦！</string>
+    <string name="cached_no_video_hint">您还没有缓存的视频，快去缓存吧！</string>
+    <string name="caching_no_video_hint">您没有正在缓存的视频，快去缓存吧！</string>
+    <string name="not_wifi_watch_hint">您正在非wifi环境下观看，将消耗流量！</string>
+    <string name="not_wifi_download_hint">当前是非wifi环境，下载将消耗流量！</string>
+    <string name="begin_all">全部开始</string>
+    <string name="pause_all">全部暂停</string>
+    <string name="caching_video">正在缓存</string>
+    <string name="cached_video_count">已缓存</string>
+    <string name="data_cleared">缓存已清除！</string>
+    <string name="press_again_to_exit">再按一次退出程序</string>
+
+    <string name="watch_video_history">观看记录</string>
+    <string name="cached_video">缓存视频</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="check_version">检查更新</string>
+    <string name="my_github">个人主页</string>
+    <string name="my_project_mainpage">项目主页</string>
+    <string name="my_update">检查更新</string>
+    <string name="my_update_url">http://fir.im/dota2helper</string>
+    <string name="my_github_url">https://github.com/uin3566</string>
+    <string name="my_project_mainpage_url">https://github.com/uin3566/Dota2Helper</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="i_know">我知道了</string>
+    <string name="tip_guide">刷新成功</string>
+    <string name="refresherror">刷新失败</string>
+
+    <string-array name="strategy_type">
+        <item name="strategy_all">全部</item>
+        <item name="strategy_newer">新手</item>
+        <item name="strategy_step">进阶</item>
+        <item name="strategy_skill">技巧</item>
+    </string-array>
+
+    <string-array name="video_type">
+        <item name="video_all">全部</item>
+        <item name="video_jieshuo">解说</item>
+        <item name="video_bisai">比赛</item>
+        <item name="video_celebrity">明星</item>
+        <item name="video_quwei">趣味</item>
+        <item name="video_beginner">新手</item>
+        <item name="video_advanced">进阶</item>
+    </string-array>
+</resources>

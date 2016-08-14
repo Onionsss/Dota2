@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/video_player_height">
+    <onionsss.it.mvpdota.view.MyHeadViewPager
+        android:id="@+id/home_head_vp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_player_height"
+        app:canLoop="true"/>
+
+</RelativeLayout>
