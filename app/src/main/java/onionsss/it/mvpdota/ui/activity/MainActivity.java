@@ -14,7 +14,7 @@ import etong.bottomnavigation.lib.BottomNavigationBar;
 import onionsss.it.mvpdota.R;
 import onionsss.it.mvpdota.ui.base.BaseFragment;
 import onionsss.it.mvpdota.ui.base.SimpleActivity;
-import onionsss.it.mvpdota.ui.fragment.HomeFragment;
+import onionsss.it.mvpdota.ui.home.HomeFragment;
 
 public class MainActivity extends SimpleActivity {
 

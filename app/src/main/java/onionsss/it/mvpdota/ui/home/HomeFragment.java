@@ -1,4 +1,4 @@
-package onionsss.it.mvpdota.ui.fragment;
+package onionsss.it.mvpdota.ui.home;
 
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -15,7 +15,6 @@ import onionsss.it.mvpdota.bean.NewsList;
 import onionsss.it.mvpdota.ui.base.BaseFragment;
 import onionsss.it.mvpdota.ui.contract.HomeContract;
 import onionsss.it.mvpdota.ui.manager.LoadStatus;
-import onionsss.it.mvpdota.ui.presenter.HomePresenter;
 
 import static com.google.gson.internal.$Gson$Preconditions.checkNotNull;
 

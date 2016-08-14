@@ -1,11 +1,10 @@
-package onionsss.it.mvpdota.ui.presenter;
+package onionsss.it.mvpdota.ui.home;
 
 import android.content.Context;
 
 import onionsss.it.mvpdota.R;
 import onionsss.it.mvpdota.ui.contract.HomeContract;
 import onionsss.it.mvpdota.ui.manager.LoadStatus;
-import onionsss.it.mvpdota.ui.model.HomeModel;
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
 
@@ -13,6 +12,7 @@ import static com.google.gson.internal.$Gson$Preconditions.checkNotNull;
 
 /**
  * 作者：张琦 on 2016/8/14 10:30
+ * P层  负责分发数据 回调V层
  */
 public class HomePresenter implements HomeContract.Presenter {
     private CompositeSubscription mSubscription;

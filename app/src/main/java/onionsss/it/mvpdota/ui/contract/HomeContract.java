@@ -1,6 +1,6 @@
 package onionsss.it.mvpdota.ui.contract;
 
-import onionsss.it.mvpdota.BasePresenter;
+import onionsss.it.mvpdota.ui.presenter.BasePresenter;
 import onionsss.it.mvpdota.BaseView;
 import onionsss.it.mvpdota.bean.NewsList;
 
