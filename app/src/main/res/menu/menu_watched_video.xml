@@ -4,5 +4,13 @@
     <item
         android:id="@+id/action_edit"
         android:title="@string/edit"
+        android:icon="@mipmap/ic_news_selected"
         app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/edit"
+        android:icon="@drawable/share_select"
+        app:showAsAction="always"/>
+
 </menu>

@@ -19,4 +19,13 @@ public class ToolbarActivity extends BaseActivity{
         toolbar.inflateMenu(menuId);
         return getSupportActionBar();
     }
+
+    public void setToolbar2(Toolbar toolbar, String title, int menuId){
+        if(toolbar == null) return;
+        toolbar.setTitleTextColor(Color.WHITE);
+        toolbar.setTitle(title);
+        if(menuId == -1)
+            return;
+        toolbar.inflateMenu(menuId);
+    }
 }

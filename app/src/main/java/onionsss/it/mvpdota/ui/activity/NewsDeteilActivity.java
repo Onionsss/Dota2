@@ -50,7 +50,9 @@ public class NewsDeteilActivity extends ToolbarActivity implements NewsDeteilCon
     private void initView() {
         mDeteilPresenter = new DeteilPresenter(this,this,mCompositeSubscription);
 
-        setToolbar(mMainToolbar, "详情", -1);
+        mMainToolbar.setNavigationIcon(R.drawable.finish_select);
+        mMainToolbar.setNavigationOnClickListener(v -> finish());
+        setToolbar2(mMainToolbar, "详情", R.menu.menu_watched_video);
     }
 
     private void initData() {
@@ -89,4 +91,5 @@ public class NewsDeteilActivity extends ToolbarActivity implements NewsDeteilCon
         }
         return super.onKeyDown(keyCode,event);
     }
+
 }
