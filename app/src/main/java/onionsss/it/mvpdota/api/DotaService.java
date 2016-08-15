@@ -29,9 +29,9 @@ public interface DotaService {
     @GET("/api/v1.0/updates/loadmore/{nid}")
     Observable<NewsList> loadMoreUpdates(@Path("nid") String nid);
     @GET("/api/v1.0/strategy/refresh/{strategy_type}")
-    Observable<StrategyList> refreshStrategies(@Path("strategy_type") String strategyType);
+    Observable<RxCacheResult<StrategyList>> refreshStrategies(@Path("strategy_type") String strategyType);
     @GET("/api/v1.0/strategy/loadmore/{strategy_type}/{nid}")
-    Observable<StrategyList> loadMoreStrategies(@Path("strategy_type") String strategyType, @Path("nid") String nid);
+    Observable<RxCacheResult<StrategyList>> loadMoreStrategies(@Path("strategy_type") String strategyType, @Path("nid") String nid);
     @GET("/api/v1.0/video/refresh/{video_type}")
     Observable<VideoList> refreshVideos(@Path("video_type") String videoType);
     @GET("/api/v1.0/video/loadmore/{video_type}/{vid}")

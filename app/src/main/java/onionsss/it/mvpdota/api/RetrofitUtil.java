@@ -16,7 +16,9 @@ public class RetrofitUtil {
     private Context mContext;
     private static Retrofit mRetrofit;
     private static Retrofit mDeteildRetrofit;
+    private static Retrofit mStrategyRetrofit;
     private static RetrofitUtil sRetrofitUtil;
+
     private RetrofitUtil(Context context){
         mContext = context;
     }
@@ -47,4 +49,13 @@ public class RetrofitUtil {
         return mDeteildRetrofit.create(DotaService.class);
     }
 
+    public DotaService buildStrategy(){
+        if(mStrategyRetrofit == null){
+            mStrategyRetrofit = new Retrofit.Builder().baseUrl("http://dota2xufserver.duapp.com")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .addCallAdapterFactory(new RxCacheCallAdapterFactory(BasicCache.fromCtx(mContext.getApplicationContext())))
+                    .build();
+        }
+        return mStrategyRetrofit.create(DotaService.class);
+    }
 }

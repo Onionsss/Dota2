@@ -18,5 +18,6 @@ public class NewsDeteilContract {
     public interface Presenter extends BasePresenter {
         void loadData(String date,String nid);
         void initWebView(WebView webView, ProgressBar progressBar,String data);
+        void initVideo(String url,boolean isVideo);
     }
 }

@@ -5,4 +5,5 @@ package onionsss.it.mvpdota;
  */
 public interface BaseView<T> {
     void setPresenter(T presenter);
+
 }

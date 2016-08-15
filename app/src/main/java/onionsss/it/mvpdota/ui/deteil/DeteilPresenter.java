@@ -24,6 +24,7 @@ public class DeteilPresenter implements NewsDeteilContract.Presenter{
     public NewsDeteilContract.View newsDeteilView;
     private NewsDeteilModel mNewsModel;
 
+
     public DeteilPresenter(NewsDeteilContract.View view,Context context,CompositeSubscription compositeSubscription){
         mNewsModel = new NewsDeteilModel(context);
         mContext = context;
@@ -37,7 +38,7 @@ public class DeteilPresenter implements NewsDeteilContract.Presenter{
     public void loadData(String date,String nid) {
         mNewsModel.getDeteilModel(date,nid)
                 .subscribe(data -> newsDeteilView.loadUrl(data),
-                        error -> newsDeteilView.updateState(LoadStatus.STATUS_ERROR),
+                        error -> {newsDeteilView.updateState(LoadStatus.STATUS_SUCCESS);/*TODO  nullpoint*/},
                         () -> {newsDeteilView.updateState(LoadStatus.STATUS_SUCCESS);
                             LogUtil.ShowLog("success");});
     }
@@ -71,5 +72,10 @@ public class DeteilPresenter implements NewsDeteilContract.Presenter{
         });
 
         webView.loadDataWithBaseURL(null, data, "text/html", "UTF-8", null);
+    }
+
+    @Override
+    public void initVideo(String url,boolean isVideo) {
+
     }
 }

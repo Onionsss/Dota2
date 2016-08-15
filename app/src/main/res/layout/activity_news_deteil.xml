@@ -7,25 +7,29 @@
 
     <include
         layout="@layout/toolbar"/>
-
-    <ProgressBar android:id="@+id/webview_progressbar"
-                 style="?android:attr/progressBarStyleHorizontal"
-                 xmlns:android="http://schemas.android.com/apk/res/android"
-                 android:layout_width="fill_parent"
-                 android:layout_height="@dimen/dimen_2dp"
-                 android:background="@null"
-                 android:indeterminateOnly="false"
-                 android:max="100"
-                 android:progressDrawable="@drawable/webview_progress_bar"/>
-
-    <WebView
-        android:id="@+id/webview"
+    <ViewStub
+        android:id="@+id/vs_web"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    <!--<ViewStub-->
-        <!--android:id="@+id/vs_video"-->
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_base_webview" />
+    <!--<ProgressBar android:id="@+id/webview_progressbar"-->
+                 <!--style="?android:attr/progressBarStyleHorizontal"-->
+                 <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                 <!--android:layout_width="fill_parent"-->
+                 <!--android:layout_height="@dimen/dimen_2dp"-->
+                 <!--android:background="@null"-->
+                 <!--android:indeterminateOnly="false"-->
+                 <!--android:max="100"-->
+                 <!--android:progressDrawable="@drawable/webview_progress_bar"/>-->
+
+    <!--<WebView-->
+        <!--android:id="@+id/webview"-->
         <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout="@layout/layout_news_video" />-->
+        <!--android:layout_height="match_parent"/>-->
+    <ViewStub
+        android:id="@+id/vs_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_news_video" />
 
 </LinearLayout>

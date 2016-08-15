@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
+
 android {
     compileSdkVersion 23
     buildToolsVersion "24.0.0"
@@ -10,6 +11,8 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
@@ -44,5 +47,15 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.1.1'
     compile 'com.bigkoo:convenientbanner:2.0.5'
     compile 'com.github.ybq:Android-SpinKit:1.0.1'
-    compile "com.squareup.retrofit2:converter-scalars:2.0.0-beta4"
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+    compile project(':youkuPlayerOpenSDK')
+
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile "org.greenrobot:greendao:2.2.1"
+    compile 'com.bigkoo:pickerview:2.1.0'
+    compile 'com.wang.avi:library:1.0.5'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.banner:FlycoBanner_Lib:2.0.2@aar'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 }

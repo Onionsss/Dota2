@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="onionsss.it.mvpdota">
-
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <meta-data
+        android:name="client_id"
+        android:value="f3d1c85b6fc94c72"/>
+    <meta-data
+        android:name="client_secret"
+        android:value="743b6369fb8cde53ad46d9bc38892057"/>
+
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="57a59b99e0f55abcb4002183"/>
+
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="fir"/>
+
+    <meta-data
+        android:name="BUG_HD_SDK_GENERAL_KEY"
+        android:value="b4d84a105c0145a2a65731bee8e4f2d2"/>
+
+
 
     <application
         android:name=".center.AppCenter"

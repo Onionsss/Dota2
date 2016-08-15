@@ -18,6 +18,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import etong.bottomnavigation.lib.BottomNavigationBar;
 import onionsss.it.mvpdota.R;
+import onionsss.it.mvpdota.ui.Strategy.StrategyFragment;
 import onionsss.it.mvpdota.ui.base.BaseFragment;
 import onionsss.it.mvpdota.ui.base.SimpleActivity;
 import onionsss.it.mvpdota.ui.home.HomeFragment;
@@ -74,7 +75,7 @@ public class MainActivity extends SimpleActivity {
         }
         mFragmentList.add(new HomeFragment());
         mFragmentList.add(new HomeFragment());
-        mFragmentList.add(new HomeFragment());
+        mFragmentList.add(new StrategyFragment());
         mFragmentList.add(new HomeFragment());
         getSupportFragmentManager().beginTransaction().add(R.id.content, mFragmentList.get(0), "" + 0).commit();
         mFloatr.setVisibility(View.VISIBLE);
@@ -107,7 +108,7 @@ public class MainActivity extends SimpleActivity {
     private void initBottom() {
         mMainBottom.addTab(R.drawable.ome, "首页", 0xff000000);
         mMainBottom.addTab(R.drawable.selector_news, "视频", 0xff000000);
-        mMainBottom.addTab(R.drawable.selector_books, "发现", 0xff000000);
+        mMainBottom.addTab(R.drawable.selector_books, "攻略", 0xff000000);
         mMainBottom.addTab(R.drawable.wode, "我的", 0xff000000);
     }
 

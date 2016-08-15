@@ -79,6 +79,9 @@ public class HomeFragment extends BaseFragment implements HomeContract.View{
             intent.putExtra(TITLE,news.getTitle());
             intent.putExtra(DATE,news.getDate());
             intent.putExtra(UID,news.getNid());
+            intent.putExtra(NewsDeteilActivity.VIDEO_BACKGROUND,news.getBackground());
+            intent.putExtra(NewsDeteilActivity.VIDEO_DATE,news.getTime());
+            intent.putExtra(NewsDeteilActivity.VIDEO_DESCRIPTION,news.getDescription());
             startActivity(intent);
         });
         mHomeRecy.setAdapter(mNewsAdapter);
